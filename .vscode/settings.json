@@ -1,3 +1,12 @@
 {
-    "python.pythonPath": "venv/bin/python"
+    "python.pythonPath": "venv/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.jediEnabled": false,
+    "python.languageServer": "Microsoft",
+
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django",
+        "--django-settings-module=<mainapp>.settings",
+    ],
+        
 }
