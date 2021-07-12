@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-szh^-6u!d=t@a8n()76@0^^d_no6qom)yok-zpk#1t2y=@4rhb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -149,12 +149,6 @@ MESSAGE_TAGS = {
     message.ERROR: 'danger',
 }
 
-# Email config
-Email_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER='childishcrown56@gmail.com'
-EMAIL_HOST_PASSWORD=''
-EMAIL_USE_TLS=True
 
 try:
     from .local_settings import *
